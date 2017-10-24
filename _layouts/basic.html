@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js">
+	<head>
+
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>Me Flat | Flat Personal Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | absolute_url }}">
+		<link rel="apple-touch-icon" href="{{ "/assets/apple-touch-icon.png" | absolute_url }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/apple-touch-icon-72x72.png" | absolute_url }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/apple-touch-icon-114x114.png" | absolute_url }}">
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->
+		<link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | absolute_url }}">
+		<link rel="stylesheet" href="{{ "/assets/css/font-awesome.css" | absolute_url }}">
+		<link rel="stylesheet" href="{{ "/assets/css/flexslider.css" | absolute_url }}">
+		<link rel="stylesheet" href="{{ "/assets/css/meflat-blue.css" | absolute_url }}">
+
+
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+		<!-- ==============================================
+		JS
+		=============================================== -->
+
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="{{ "/assets/js/libs/modernizr.min.js" | absolute_url }}"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31417179-4"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-31417179-4');
+		</script>
+
+
+	</head>
+
+	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+
+					<!-- ======= LOGO (for small screens)========-->
+					<a class="navbar-brand visible-xs scrollto" href="#home">Jd</a>
+
+				</div>
+
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#services" class="scrollto">Leistungen</a>
+						</li>
+						<li>
+							<a href="#about" class="scrollto">Über uns</a>
+						</li>
+						<li id="logo">
+							<a href="#home" class="scrollto">
+								<h1>Cowboy<span>Venture</span></h1>
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto">Kontakt</a>
+						</li>
+						<li>
+							<a href="#imprint" class="scrollto">Impressum</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->
+
+			</div><!--End container -->
+
+		</div><!--End main-nav -->
+
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron bg-image">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-col text-center">
+						<h1>Agentur für bessere Software</h1>
+						<p>Wir beraten, programmieren, automatisieren - schnell und agil.</p>
+					</div>
+				</div>
+			</div>
+		</header><!--End header -->
+
+		<!-- ==============================================
+		SERVICES
+		=============================================== -->
+		<section id="services" class="white-bg padding-top-bottom">
+			<div class="container">
+				<header class="section-header text-center">
+					<h1 class="scrollimation scale-in">Was wir anbieten</h1>
+					<p>Wir beraten nicht nur, sondern machen uns auch die Hände schmutzig. Unsere Spezialiät ist die Entwicklung von skalierbaren, responsiven Webanwendungen. Darüber hinaus unterstützen wir Ihre Projekte als Scrum Master, Product Owner und DevOps.</p>
+				</header>
+
+				<div class="row services">
+					<div class="col-md-4 col-sm-6 item scrollimation fade-up">
+						<div class="icon">
+							<i class="fa fa-ship" aria-hidden="true"></i>
+						</div>
+
+						<h2>Software-Entwicklung</h2>
+						<p>Wir sind gut darin, schlanke Software zu entwicklen.
+						<br><br>
+							Warum?
+						<br><br>
+						Konzentration auf das Wesentliche. Priorisierung von User-Stories. Sinnvoller Technologiestack. Testgetrieben. Automatisiert.
+						</p>
+					</div>
+
+					<div class="col-md-4 col-sm-6 item scrollimation fade-up d1">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="{{ "/assets/images/service2.png" | absolute_url }}" alt="" />
+						</div>
+
+						<h2>Projekt-Management</h2>
+						<p>Wir unterstützen Ihre Software-Projekte gerne als Scrum Master, Product Owner, Kanban Sensei oder im Bereich DevOps.
+							<br><br>
+						Dabei bemühen wir uns immer um ein transparentes sowie pragmatisches Vorgehen.</p>
+					</div>
+
+					<div class="col-md-4 col-sm-6 item scrollimation fade-up d2">
+
+						<div class="icon">
+							<img class="img-responsive img-center" src="{{ "/assets/images/service3.png" | absolute_url }}" alt="" />
+						</div>
+
+						<h2>IT-Controlling</h2>
+						<p>Wir helfen Ihnen, mehr aus Ihrer IT-Abteilung herauszubekommen.
+							<br><br>
+							Wie?
+							<br><br>
+							Agiles Coaching, Erkennung von Architekturproblemen, Vereinfachung des Technologie-Stacks, Automatisierung von Tests und Deployments.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==============================================
+		About Us
+		=============================================== -->
+		<section id="about" class="dark-bg light-typo padding-top-bottom">
+			<div class="container">
+				<header class="section-header text-center">
+					<h1 class="scollimation scale-in">Über uns</h1>
+				</header>
+
+				<div class="container">
+					<p>
+						Cowboy Venture ist seit 2011 am Markt aktiv. Wir haben seitdem für zahlreiche Unternehmen
+						erfolgreich Software entwickelt, teilweise von der Konzeption bis zum produktiven Betrieb.</p>
+					<p>
+						Als unser Schwerpunkt hat sich die Entwicklung und Betreuung von web-basierten Anwendungen entwickelt.
+						Dabei haben wir sowohl mit B2B- als auch mit komplexen B2C-Anwendungen viele Erfahrungen gesammelt.
+					</p>
+					<p>
+						Oberstes Ziel ist es dabei, unserem Kunden genau die Software zu liefern, die er auch möchte. Und das ganze so,
+						dass es auch unter der Haube gut aussieht.
+					</p>
+					<p>
+						Wir schaffen dies unter anderem durch <b>automatisierte Tests</b>, <b>KPI-Integration</b>, <b>Analytics</b> und wiederverwendbare Komponenten.
+					</p>
+					<p>
+						Darüber hinaus haben wir viel Erfahrung mit <b>agiler Projekt-Steuerung und -Leitung</b>. Wir verwenden je nach Projekt <b>Scrum</b> oder <b>Kanban</b>
+						und halten uns dabei strikt an die jeweiligen Standards.
+						Als <b>Scrum Master</b> oder <b>Product Owner</b> unterstützen wir auch Projekte, die bei Ihnen zu Hause oder durch Dritt-Anbieter entwickelt werden.
+						Dabei legen wir viel Wert auf sehr gute <b>Kommunikation</b>, </b>Transparenz</b> und ein effizientes <b>Controlling</b>.
+					</p>
+				</div>
+			</div>
+		</section
+
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->
+		<section id="contact" class="white-bg padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+					<h1 class="scrollimation scale-in">Kontaktieren Sie uns</h1>
+					<p>Wir freuen uns über Ihre Kontaktaufnahme. Schreiben Sie uns eine Email oder rufen Sie an:</p>
+				</header>
+
+				<div class="container">
+					<div class="col-sm-12 text-center">
+						<a href="mailto: kontakt@cowboyventure.com" class="contact-data">kontakt@cowboyventure.com</a>
+					</div>
+					<div class="col-sm-12 text-center">
+							<span class="contact-data">030 23 97 60 37</span>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- ==============================================
+		Imprint
+		=============================================== -->
+		<section id="imprint" class="dark-bg light-typo padding-top-bottom">
+			<div class="container">
+				<header class="section-header text-center">
+					<h1 class="scollimation scale-in">Impressum</h1>
+				</header>
+
+				<div class="container text-center">
+					<p>Cowboy Venture UG (haftungsbeschränkt)</p>
+					<p>Geschäftsführer: Simon Eichenauer</p>
+					<p>Adresse: Aroser Allee 40, 13407 Berlin</p>
+					<p>Email: kontakt@cowboyventure.com</p>
+					<p>Telefon: 030 23 97 60 37</p>
+					<p>Handelsregister Berlin: HRB 136892 B</p>
+					<p>Umsatzsteuernummer: 279927797</p>
+				</div>
+			</div>
+		</section
+
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->
+
+		<footer id="main-footer" class="dark-bg light-typo">
+			<div class="container">
+				<hr>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p>&copy;2017 Cowboy Venture UG (haftungsbeschränkt)</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="{{ "/assets/js/libs/jquery-1.9.1.min.js" | absolute_url }}">\x3C/script>')</script>
+
+		<script src="{{ "/assets/js/libs/bootstrap.min.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.easing.1.3.min.js" | absolute_url }} "></script>
+		<script src="{{ "/assets/js/jquery.scrollto.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.fittext.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.flexslider.min.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.masonry.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/waypoints.min.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.label_better.min.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/jquery.easypiechart.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/contact.js" | absolute_url }}"></script>
+		<script src="{{ "/assets/js/meflat.js" | absolute_url }}"></script>
+
+	</body>
+
+</html>
