@@ -6,17 +6,17 @@
 		Title and Meta Tags
 		=============================================== -->
 		<meta charset="utf-8">
-		<title>Me Flat | Flat Personal Portfolio</title>
+		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- ==============================================
 		Favicons
 		=============================================== -->
-		<link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
-		<link rel="apple-touch-icon" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
-		<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/apple-touch-icon-72x72.png" | relative_url }}">
-		<link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/apple-touch-icon-114x114.png" | relative_url }}">
+		<link rel="shortcut icon" href="{{ "/assets/images/favicons/favicon.ico" | relative_url }}">
+		<link rel="apple-touch-icon" href="{{ "/assets/favicons/apple-touch-icon.png" | relative_url }}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/favicons/apple-touch-icon-72x72.png" | relative_url }}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/favicons/apple-touch-icon-114x114.png" | relative_url }}">
 
 		<!-- ==============================================
 		CSS
@@ -127,16 +127,16 @@
 				<div class="row services">
 					<div class="col-md-4 col-sm-6 item scrollimation fade-up">
 						<div class="icon">
-							<i class="fa fa-ship" aria-hidden="true"></i>
+              <img class="img-responsive img-center" src="{{ "/assets/images/service1.png" | relative_url }}" alt="" />
 						</div>
 
 						<h2>Software-Entwicklung</h2>
-						<p>Wir sind gut darin, schlanke Software zu entwicklen.
-						<br><br>
-							Warum?
-						<br><br>
-						Konzentration auf das Wesentliche. Priorisierung von User-Stories. Sinnvoller Technologiestack. Testgetrieben. Automatisiert.
-						</p>
+						<p>Wir sind gut darin, schlanke Software zu entwickeln.</p>
+
+						<p class="question">Warum?</p>
+						<p>Wir konzentrieren uns auf das Wesentliche.</p>
+            <p>Wir verwenden den Technologie-Stack, der am besten zu Ihnen passt.</p>
+            <p>Wir automatisieren Tests und Deployments und sorgen damit für schnellere Feedback-Schleifen.</p>
 					</div>
 
 					<div class="col-md-4 col-sm-6 item scrollimation fade-up d1">
@@ -146,9 +146,13 @@
 						</div>
 
 						<h2>Projekt-Management</h2>
-						<p>Wir unterstützen Ihre Software-Projekte gerne als Scrum Master, Product Owner, Kanban Sensei oder im Bereich DevOps.
-							<br><br>
-						Dabei bemühen wir uns immer um ein transparentes sowie pragmatisches Vorgehen.</p>
+						<p>Wir unterstützen Ihre Software-Projekte gerne als Scrum Master, Product Owner, Kanban Sensei oder im Bereich DevOps.</p>
+            <p class="question">Wie?</p>
+				    <p>Wir kommunizieren intensiv und proaktiv.</p>
+            <p>Wir sorgen für ein gepflegtes Backlog, das Ihren Wünschen entspricht.</p>
+            <p>Wir analysieren und optimieren die Burnrate.</p>
+            <p>Wir sorgen dafür, dass sich alle Beteiligten an den Prozess halten</p>
+
 					</div>
 
 					<div class="col-md-4 col-sm-6 item scrollimation fade-up d2">
@@ -157,13 +161,14 @@
 							<img class="img-responsive img-center" src="{{ "/assets/images/service3.png" | relative_url }}" alt="" />
 						</div>
 
-						<h2>IT-Controlling</h2>
-						<p>Wir helfen Ihnen, mehr aus Ihrer IT-Abteilung herauszubekommen.
-							<br><br>
-							Wie?
-							<br><br>
-							Agiles Coaching, Erkennung von Architekturproblemen, Vereinfachung des Technologie-Stacks, Automatisierung von Tests und Deployments.
-						</p>
+						<h2>IT-Beratung</h2>
+						<p>Wir helfen Ihnen, mehr aus Ihrer IT-Abteilung herauszubekommen.</p>
+						<p class="question">Weshalb?</p>
+						<p>Erkennung von Architekturproblemen</p>
+            <p>Vereinfachung des Technologie-Stacks.</p>
+            <p>Reduzierung unnötiger Tätigkeiten.</p>
+            <p>Agiles Coachen.</p>
+            <p>Beseitigung individueller Defizite.</p>
 					</div>
 				</div>
 			</div>
@@ -181,11 +186,15 @@
 				<div class="container">
 					<p>
 						Cowboy Venture ist seit 2011 am Markt aktiv. Wir haben seitdem für zahlreiche Unternehmen
-						erfolgreich Software entwickelt, teilweise von der Konzeption bis zum produktiven Betrieb.</p>
+						erfolgreich Software entwickelt, von der Konzeption bis zum produktiven Betrieb.</p>
 					<p>
 						Als unser Schwerpunkt hat sich die Entwicklung und Betreuung von web-basierten Anwendungen entwickelt.
 						Dabei haben wir sowohl mit B2B- als auch mit komplexen B2C-Anwendungen viele Erfahrungen gesammelt.
 					</p>
+          <p>
+            Viel Erfahrung haben wir in der Entwicklung von <b>Minimum Viable Products (MVPs)</b> und Prototypen.
+            Durch schlanke Programmierung und den passenden Technologiestack können wir innerhalb von Tagen ein vorführbares Produkt entwickeln.
+          </p>
 					<p>
 						Oberstes Ziel ist es dabei, unserem Kunden genau die Software zu liefern, die er auch möchte. Und das ganze so,
 						dass es auch unter der Haube gut aussieht.
@@ -212,7 +221,7 @@
 
 				<header class="section-header text-center">
 					<h1 class="scrollimation scale-in">Kontaktieren Sie uns</h1>
-					<p>Wir freuen uns über Ihre Kontaktaufnahme. Schreiben Sie uns eine Email oder rufen Sie an:</p>
+					<p>Wir freuen uns auf Ihre Kontaktaufnahme. Schreiben Sie uns eine Email oder rufen Sie einfach an:</p>
 				</header>
 
 				<div class="container">

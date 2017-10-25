@@ -1,4 +1,4 @@
 ---
 layout: basic
-title: Cowboy Venture Bla
+title: Cowboy Venture - Agentur für bessere Software
 ---
